@@ -37,9 +37,20 @@
             color: brown;
             font-weight: bold;
         }
-        
+        .specialBTN {
+            width: 80%;
+        }
         
     </style>
+    <script>
+        function sprice() {
+            
+            document.getElementById("Hello").innerHTML="<h3>450.00</h3>";
+        }
+        function order(){
+            alert("Your Order Confirmed Successfully!")
+        }
+    </script>
   </head>
 
   <body>
@@ -108,7 +119,7 @@
           </table></p>
         </div>
         <div class="col-md-5 order-md-1">
-            <img src="courierPage-1.jpg" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+            <img src="postal-1.jpg" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
           
         </div>
       </div>
@@ -116,14 +127,77 @@
     <div class="container my-5">
         <div class="row featurette d-flex justify-content-center align-items-center">
             <div class="col-md-7">
-              <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
-              <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+                <h2>Request For Service </h2>
+                <hr>
+                <form action="">
+                <div class="input-group">
+                    <span class="input-group-text">First & Last Name</span>
+                    <input type="text" aria-label="First name" class="form-control">
+                    <input type="text" aria-label="Last name" class="form-control">
+                </div>
+                <div class="input-group input-group-lg my-2">
+                    <span class="input-group-text" id="inputGroup-sizing-lg">Your Address</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-lg">
+                </div>
+                <div class="input-group mb-3">
+                    <select class="form-select" id="inputGroupSelect02">
+                        <option selected>Choose City...</option>
+                        <option value="1">Lucknow</option>
+                        <option value="2">Hydrabad</option>
+                        <option value="3">Banglore</option>
+                        <option value="3">Chennai</option>
+                        <option value="3">Jammu</option>
+                        <option value="3">Delhi</option>
+                        <option value="3">Patna</option>
+                    </select>
+                    <label class="input-group-text" for="inputGroupSelect02">Ship It</label>
+                </div>
+                <div class="input-group input-group-lg my-2">
+                    <span class="input-group-text" id="inputGroup-sizing-lg">Delivey Address</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-lg">
+                </div>
+                <div class="input-group mb-3">
+                    <select class="form-select" id="inputGroupSelect02">
+                        <option selected>Choose Item to Ship...</option>
+                        <option value="1">Clothing</option>
+                        <option value="2">Shoes</option>
+                        <option value="3">Small Consumer Item</option>
+                        <option value="3">Food It</option>
+                        <option value="3">Books</option>
+
+                    </select>
+                    <label class="input-group-text" for="inputGroupSelect02">Ship It</label>
+                </div>
+                <div class="input-group mb-3">
+                    <select class="form-select" id="inputGroupSelect02">
+                        <option selected>Choose from...</option>
+                        <option value="1">> 1KG</option>
+                        <option value="2">1KG - 3KG</option>
+                        <option value="3">3KG - 6KG</option>
+                        <option value="3">> 6KG</option>
+
+                    </select>
+                    <label class="input-group-text" for="inputGroupSelect02">Weight</label>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default"><button type="button"
+                        class="btn btn-outline-success " onclick="sprice()"> Click to Calculate Charge</button></span>
+                <span class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default" id="Hello"></span>
+                </div>
+                <button type="button" class="btn btn-outline-success specialBTN mx-5" onclick="order()">Click It To Ship It</button>
+            </form>
+                
             </div>
             <div class="col-md-5">
-                <img src="courierPage-2.webp" alt="" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
-              
+                <img src="posta-2.jpg" alt=""
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                    height="500">
+
             </div>
-          </div>
+        </div>
     </div>
 
       <footer class="container-fluid central">
